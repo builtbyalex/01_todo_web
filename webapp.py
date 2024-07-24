@@ -20,5 +20,5 @@ for index, todo in enumerate(todos):
         del st.session_state[todo]
         st.rerun()
 
-st.text_input(label="", placeholder="Enter a todo",
+st.text_input(label="todo input field", placeholder="Enter a todo",
               on_change=add_todo, key='new_todo')
